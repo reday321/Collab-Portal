@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg_light"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,14 +11,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Profile Image Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_profile"
+                android:contentDescription="Profile picture"/>
+        </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             style="@style/CardElev"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:padding="14dp"
+                android:padding="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -26,49 +46,127 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Student Name"
-                    android:textSize="20sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
                     android:textColor="@color/text_primary"/>
 
                 <TextView
                     android:id="@+id/tvStudentId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
                     android:text="ID: ---"
                     android:textColor="@color/text_secondary"/>
 
-                <View android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="1dp" android:background="#eef2ff"/>
+                <View 
+                    android:layout_marginTop="24dp" 
+                    android:layout_marginBottom="24dp"
+                    android:layout_width="match_parent" 
+                    android:layout_height="1dp" 
+                    android:background="#eef2ff"/>
 
-                <TextView
-                    android:id="@+id/tvEmail"
-                    android:layout_width="wrap_content"
+                <!-- Info Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="Email: ---"/>
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner_bg">
 
-                <TextView
-                    android:id="@+id/tvPhone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Phone: ---"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+                        
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_email"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="Email icon"/>
 
-                <TextView
-                    android:id="@+id/tvDept"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Department: ---"/>
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16sp"
+                            android:text="Email: ---"/>
+                    </LinearLayout>
+
+                    <View 
+                        android:layout_width="match_parent" 
+                        android:layout_height="1dp" 
+                        android:background="#eef2ff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+                        
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_phone"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="Phone icon"/>
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16sp"
+                            android:text="Phone: ---"/>
+                    </LinearLayout>
+
+                    <View 
+                        android:layout_width="match_parent" 
+                        android:layout_height="1dp" 
+                        android:background="#eef2ff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+                        
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_department"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="Department icon"/>
+
+                        <TextView
+                            android:id="@+id/tvDept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16sp"
+                            android:text="Department: ---"/>
+                    </LinearLayout>
+                </LinearLayout>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnLogout"
-                    android:layout_marginTop="18dp"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_marginTop="24dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Logout"
-                    android:backgroundTint="@color/accent"
-                    android:textColor="#fff"/>
+                    android:textSize="16sp"
+                    app:strokeColor="@color/accent"
+                    android:textColor="@color/accent"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_logout"
+                    app:iconTint="@color/accent"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

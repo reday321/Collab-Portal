@@ -16,7 +16,7 @@
         android:textSize="32sp"
         android:textStyle="bold"
         android:fontFamily="@font/poppins_bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:layout_marginBottom="16dp" />
 
     <!-- Subtitle -->
@@ -26,7 +26,7 @@
         android:text="Building bridges through shared learning"
         android:textSize="15sp"
         android:fontFamily="@font/poppins_medium"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/white" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:text="Login to your account"
         android:textStyle="bold"
         android:fontFamily="@font/poppins_regular"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/white" />
 
     <!-- Email Field -->
     <com.google.android.material.textfield.TextInputLayout
@@ -43,7 +43,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="      Email"
+        android:hint="Email"
         app:startIconDrawable="@drawable/fc_email">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -59,7 +59,7 @@
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="      Password"
+        android:hint="Password"
         app:startIconDrawable="@drawable/fc_lock"
         app:endIconMode="password_toggle">
 
@@ -72,7 +72,7 @@
 
     <!-- Login Button -->
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.Material3.Button.FilledTonalButton"
+        style="@style/Widget.Material3.Button"
         android:id="@+id/btnLogin"
         android:layout_marginTop="18dp"
         android:layout_width="match_parent"
@@ -83,7 +83,7 @@
         android:fontFamily="@font/poppins_medium"
         app:cornerRadius="12dp"
         android:backgroundTint="@color/md_primary"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/white" />
 
     <!-- Register -->
     <TextView
@@ -93,6 +93,6 @@
         android:layout_marginTop="14dp"
         android:text="Don't have an account? Register"
         android:fontFamily="@font/poppins_regular"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/white" />
 
 </LinearLayout>
