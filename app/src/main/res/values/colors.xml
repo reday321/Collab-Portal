@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_primary">#4F46E5</color>        <!-- indigo-600 -->
+    <color name="md_primary_variant">#3730A3</color>
+    <color name="md_secondary">#06B6D4</color>      <!-- teal -->
+    <color name="bg_light">#F8FAFF</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="accent">#F59E0B</color>            <!-- amber -->
+    <color name="white">#FBFBFB</color>            <!-- amber -->
+</resources>
