@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import com.google.android.material.button.MaterialButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -111,8 +112,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     }
 
     public class PostViewHolder extends RecyclerView.ViewHolder {
-        TextView userNameTextView, contentTextView, timestampTextView, lovesTextView;
-        ImageButton loveButton, editButton, deleteButton;
+    TextView userNameTextView, contentTextView, timestampTextView, lovesTextView;
+    ImageButton loveButton;
+    MaterialButton editButton, deleteButton;
         LinearLayout editDeleteLayout;
 
         public PostViewHolder(@NonNull View itemView) {
