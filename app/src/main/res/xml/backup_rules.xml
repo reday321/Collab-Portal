@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude shared preferences that contain Firebase data -->
+    <exclude domain="sharedpref" path="firebase_"/>
+    <exclude domain="sharedpref" path="com.google.firebase"/>
+
+    <!-- Include app-specific shared preferences -->
+    <include domain="sharedpref" path="app_preferences.xml"/>
+
+    <!-- Include files in the files directory -->
+    <include domain="file" path="."/>
+
+    <!-- Include databases -->
+    <include domain="database" path="."/>
+
+    <!-- Include device-specific data that should not be backed up -->
+    <exclude domain="root" path="device_data"/>
+</full-backup-content>

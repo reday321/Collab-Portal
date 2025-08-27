@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Collab Portal</string>
+
+    <!-- Login Activity -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to continue your journey</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_to_collab">New to Collab Portal?</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Registration Activity -->
+    <string name="create_your_account">Create Your Account</string>
+    <string name="join_campus_portal">Join your campus sharing portal today</string>
+    <string name="full_name">Full Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="department">Department (e.g., CSE)</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in_button">Sign In</string>
+
+    <!-- Home Activity -->
+    <string name="welcome_back_message">Welcome back!</string>
+    <string name="ready_to_share">Ready to share some knowledge?</string>
+    <string name="recent_posts">Recent Posts</string>
+    <string name="view_all">View All</string>
+    <string name="no_posts_yet">No posts yet</string>
+    <string name="be_first_to_share">Be the first to share something!</string>
+    <string name="new_post">New Post</string>
+
+    <!-- Profile Activity -->
+    <string name="my_profile">My Profile</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="logout">Logout</string>
+    <string name="quick_logout">Quick Logout</string>
+
+    <!-- Add Post Fragment -->
+    <string name="create_new_post">Create New Post</string>
+    <string name="whats_on_your_mind">What\'s on your mind?</string>
+    <string name="post_button">Post</string>
+
+    <!-- About Us Fragment -->
+    <string name="about_collab_portal">About Collab Portal</string>
+    <string name="about_description">Collab Portal is a platform for students to share knowledge, collaborate on projects, and build a community of learners. Our mission is to create a space where students can connect, learn from each other, and grow together.\n\nVersion: 1.0.0\nDeveloped with ❤️ for the student community</string>
+
+    <!-- Common Strings -->
+    <string name="error_occurred">An error occurred</string>
+    <string name="loading">Loading…</string>
+    <string name="success">Success</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_internet_connection">No internet connection</string>
+
+    <!-- Firebase Error Messages -->
+    <string name="error_invalid_email">The email address is badly formatted</string>
+    <string name="error_wrong_password">The password is invalid</string>
+    <string name="error_user_not_found">There is no user record corresponding to this identifier</string>
+    <string name="error_user_disabled">The user account has been disabled by an administrator</string>
+    <string name="error_too_many_requests">We have blocked all requests from this device due to unusual activity. Try again later</string>
+    <string name="error_operation_not_allowed">This sign-in method is not allowed</string>
+</resources>

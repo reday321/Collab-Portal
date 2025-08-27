@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="md_error">#0077b6</color>
+
+    <!-- Primary Colors -->
+    <color name="md_primary">#0077b6</color>
+    <color name="md_primary_dark">#023e8a</color>
+    <color name="md_primary_light">#90e0ef</color>
+
+    <!-- Secondary Colors -->
+    <color name="md_secondary">#FFB347</color>
+    <color name="md_secondary_dark">#FF9500</color>
+    <color name="md_secondary_light">#FFD699</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+
+    <!-- Background Colors -->
+    <color name="login_page">#8ecae6</color>
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_dark">#121212</color>
+
+    <!-- Chip Background -->
+    <color name="chip_background">#E3F2FD</color>
+
+    <!-- Bottom Navigation Colors -->
+    <color name="bottom_nav_color">@color/md_primary</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+
+    <!-- color add splash screen er jonno -->
+    <color name="splash_screen_background">#90e0ef</color>
+</resources>

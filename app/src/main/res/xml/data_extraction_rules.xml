@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include shared preferences except Firebase ones -->
+        <include domain="sharedpref" path="app_preferences.xml"/>
+
+        <!-- Exclude Firebase data from cloud backup -->
+        <exclude domain="sharedpref" path="firebase_"/>
+        <exclude domain="sharedpref" path="com.google.firebase"/>
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Include all shared preferences for device transfer -->
+        <include domain="sharedpref" path="."/>
+    </device-transfer>
+</data-extraction-rules>

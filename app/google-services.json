@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960535250513",
+    "project_id": "collab-portal-9f75b",
+    "storage_bucket": "collab-portal-9f75b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960535250513:android:33710bf11c15a8d2e71a70",
+        "android_client_info": {
+          "package_name": "com.reday.collabportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPuQHh2XIpJcEIwyYvtgyT-6_WEcmIXiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
